@@ -1,6 +1,8 @@
 @import url('./about.css');
 @import url('./servicios.css');
 @import url('./contacto.css');
+@import url('./portfolio.css');
+@import url('./footer.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /* Reset básico para eliminar estilos por defecto */
@@ -12,22 +14,25 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-}
-
-.navbar {
-    background: #333; 
-    padding: 1rem 0;
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;
+    overflow-x: hidden;
 }
 
 .mr-right-custom {
+    background: linear-gradient(45deg, #007bff, #6610f2) !important;
+    border: none;
     margin-right: 15px; 
+    transition: all 0.3s ease-in-out !important;
+}
+
+.mr-right-custom:hover{
+    background: linear-gradient(45deg, #6610f2, #007bff) !important; 
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
 .navbar-custom {
-    background-color: #5682ad; 
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,7 +47,7 @@ body {
 }
 
 .navbar-custom .nav-link {
-    color: #FFFFFF !important; 
+    color: #000000 !important; 
     font-size: 1rem;
     font-weight: 700;
     transition: color 0.3s ease-in-out;
@@ -51,20 +56,6 @@ body {
 .nav-link:hover, .nav-link:focus {
     color: #007bff !important;
     padding-left: 10px; /* Indica visualmente el enfoque */
-}
-
-
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,.4);
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0,0,0,.6);
 }
 
 .hero {
@@ -136,6 +127,31 @@ body {
     background: linear-gradient(45deg, #6610f2, #007bff);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+/* Ventajas de tener web */
+.scrolling-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-inline {
+    min-width: 200px; /* Ajusta al tamaño deseado */
+    margin: 0 15px;
+    background-color: #f1f1f1; /* O cualquier color de fondo */
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    /* Animación */
+    animation: scroll 10s linear infinite;
+}
+
+/* Asegúrate de que el @keyframes abarque suficiente distancia para que el efecto sea continuo y suave */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* fin Ventajas de tener web */
 
 /* BOTTON WPP */
 .whatsapp-float {
