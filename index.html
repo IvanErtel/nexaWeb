@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NexaWeb</title>
+    <!-- Pre-Carga -->
+    <link rel="preload" href="assets/background.webp" as="image">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Iconos -->
@@ -105,7 +107,11 @@
                 <!-- Plan de Landing Page -->
                 <div class="col-md-4">
                     <div class="card service-card">
-                        <img src="./assets/landing.webp" class="card-img-top" alt="Landing Page">
+                        <img src="./assets/landing.webp" class="card-img-top" alt="Landing Page" srcset="assets/landing-small.webp 480w,
+                        assets/landing-medium.webp 720w,
+                        assets/landing-large.webp 1080w" sizes="(max-width: 480px) 480px,
+                       (max-width: 720px) 720px,
+                       1080px" loading="lazy">
                         <div class="card-body">
                             <h5 class="title-service">Plan Landing Page</h5>
                             <p class="card-text">Diseño y desarrollo de landing pages optimizadas para conversiones.
@@ -117,7 +123,11 @@
                 <!-- Desarrollo de Sitio Web Completo -->
                 <div class="col-md-4">
                     <div class="card service-card">
-                        <img src="./assets/webcompleta.webp" class="card-img-top" alt="Sitio Web Completo">
+                        <img src="./assets/webcompleta.webp" class="card-img-top" alt="Sitio Web Completo" srcset="assets/landing-small.webp 480w,
+                        assets/landing-medium.webp 720w,
+                        assets/landing-large.webp 1080w" sizes="(max-width: 480px) 480px,
+                       (max-width: 720px) 720px,
+                       1080px" loading="lazy">
                         <div class="card-body">
                             <h5 class="title-service">Sitio Web Completo</h5>
                             <p class="card-text">Sitios web personalizados,varias páginas y funciones a medida.
@@ -130,7 +140,11 @@
                 <!-- Mantenimiento y Soporte Web -->
                 <div class="col-md-4">
                     <div class="card service-card">
-                        <img src="./assets/mantenimiento.webp" class="card-img-top" alt="Mantenimiento Web">
+                        <img src="./assets/mantenimiento.webp" class="card-img-top" alt="Mantenimiento Web" srcset="assets/landing-small.webp 480w,
+                        assets/landing-medium.webp 720w,
+                        assets/landing-large.webp 1080w" sizes="(max-width: 480px) 480px,
+                       (max-width: 720px) 720px,
+                       1080px" loading="lazy">
                         <div class="card-body">
                             <h5 class="title-service">Mantenimiento y Soporte</h5>
                             <p class="card-text">Servicios de mantenimiento y soporte técnico para asegurar el óptimo
@@ -153,7 +167,8 @@
             <div class="row justify-content-center">
                 <div class="col-md-3 my-3">
                     <div class="portfolio-card no-video">
-                        <img src="./assets/distribuidora.webp" alt="Descripción del proyecto" class="portfolio-image">
+                        <img src="./assets/distribuidora.webp" alt="Descripción del proyecto" class="portfolio-image"
+                            loading="lazy">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h5 class="project-title">Distribuidora Bebidas</h5>
