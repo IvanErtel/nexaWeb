@@ -8,9 +8,17 @@
     <!-- Pre-Carga -->
     <link rel="preload" href="assets/background.webp" as="image">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" as="style"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </noscript>
     <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        </noscript>
     <!-- Meta Tags SEO -->
     <meta name="description"
         content="NexaWeb ofrece soluciones profesionales de desarrollo web, incluyendo diseño de sitios web, desarrollo de e-commerce, y SEO para ayudar a tu negocio a crecer en línea.">
@@ -222,9 +230,10 @@
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h5 class="project-title">Tiendas Personalizadas</h5>
-                                    <p class="project-description">Venta especializada en iPhones reacondicionados,
-                                        garantizando calidad y tecnología a precios accesibles.</p>
-                                    <a href="https://aquamarine-fox-795492.hostingersite.com/" class="btn btn-primary">Consultar</a>
+                                <p class="project-description">Venta especializada en iPhones reacondicionados,
+                                    garantizando calidad y tecnología a precios accesibles.</p>
+                                <a href="https://aquamarine-fox-795492.hostingersite.com/"
+                                    class="btn btn-primary">Consultar</a>
                             </div>
                         </div>
                     </div>
@@ -273,11 +282,12 @@
 
 
     <!-- Scripts de Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script src="./script/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    
+    <script src="./script/scripts.js" defer></script>
+    
 
     <a href="https://wa.me/5491134124829" class="whatsapp-float" target="_blank">
         <img src="./assets/wpp.webp" alt="Chat WhatsApp">

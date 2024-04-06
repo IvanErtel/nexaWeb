@@ -183,3 +183,15 @@ body {
     height: auto;
 }
 /* FIN BOTTON WPP */
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .hero {
+        background: none; 
+        background-color: #007bff; 
+        background-attachment: scroll; 
+    }
+    .hero::before {
+        background: rgba(0, 0, 0, 0.3); 
+    }
+}
