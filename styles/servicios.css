@@ -1,4 +1,11 @@
+#services {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 #services .row {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,6 +21,9 @@
     flex-direction: column;
     flex: 1; 
     border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -33,8 +43,8 @@
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .service-card:hover .card-img-top {
@@ -58,11 +68,10 @@
 }
 
 .title-service {
-    font-weight: 700;
-    font-size: 1.6rem;
+    font-weight: 600;
+    font-size: 1.3rem;
     color: #333;
-    margin-bottom: 15px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .card-text {
