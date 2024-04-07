@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NexaWeb</title>
-    <!-- Pre-Carga -->
-    <link rel="preload" href="assets/background.webp" as="image">
     <!-- Bootstrap CSS -->
     <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" as="style"
         onload="this.rel='stylesheet'">
@@ -54,7 +52,7 @@
     <!--navbar de Bootstrap para el encabezado -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-            <a href="#home" class="navbar-brand"><img src="./assets/logosinFondo.webp" alt="logo desarrollo web"></a>
+            <a href="#home" class="navbar-brand"><img loading="lazy" rel="preload" src="./assets/logosinFondo.webp" alt="logo desarrollo web"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -204,7 +202,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-3 my-3">
                     <div class="portfolio-card no-video">
-                        <img src="./assets/distribuidora2.webp" alt="Descripción del proyecto" class="portfolio-image"
+                        <img loading="lazy" src="./assets/distribuidora2.webp" alt="Descripción del proyecto" class="portfolio-image"
                             srcset="./assets/distribuidora2.webp 480w, ./assets/distribuidora.webp 1080w"
                             sizes="(max-width: 480px) 480px, 1080px" loading="lazy">
                         <div class="portfolio-overlay">
@@ -220,7 +218,7 @@
                 </div>
                 <div class="col-md-3 my-3">
                     <div class="portfolio-card no-video">
-                        <img src="./assets/portfolio2.webp" alt="Descripción del proyecto" class="portfolio-image">
+                        <img loading="lazy" src="./assets/portfolio2.webp" alt="Descripción del proyecto" class="portfolio-image" as="image">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h5 class="project-title">Portfolios</h5>
