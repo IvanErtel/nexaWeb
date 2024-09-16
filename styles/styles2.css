@@ -101,7 +101,7 @@ body {
 
 .hero h1 {
     font-size: 3rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 400; 
     margin-bottom: 0.5rem;
 }
@@ -206,15 +206,19 @@ body {
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
     .hero {
+        background-attachment: scroll;
         background: none; 
         background-color: #007bff; 
         background-attachment: scroll; 
+        background: linear-gradient(135deg, #009ffd 0%, #2a2a72 100%);
     }
     .hero::before {
         background: rgba(0, 0, 0, 0.3); 
     }
 
     .hero h1 {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 400;
         font-size: 3rem;
         margin-bottom: 1.5rem;
       }
