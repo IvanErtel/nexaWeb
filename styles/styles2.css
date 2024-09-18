@@ -207,12 +207,14 @@ body {
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
     .hero {
+        padding: 50px 20px;
         background-attachment: scroll;
         background: none; 
         background-color: #007bff; 
         background-attachment: scroll; 
         background: linear-gradient(135deg, #009ffd 0%, #2a2a72 100%);
     }
+    
     .hero::before {
         background: rgba(0, 0, 0, 0.3); 
     }
