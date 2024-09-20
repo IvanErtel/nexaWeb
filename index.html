@@ -45,6 +45,8 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"></noscript>
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
 </head>
 
@@ -82,7 +84,7 @@
     </header>    
 
     <!-- Sección Hero adaptada con Bootstrap -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" data-aos="fade-up">
         <div class="hero-inner">
             <h1>Desarrolla tu Negocio en Línea con una Pagina Web Profesional y Rentable</h1>
             <!-- <h2>Diseñamos Paginas Web que Atraen Clientes y Generan Resultados</h2> -->
@@ -95,7 +97,7 @@
     </section>
     
     <!-- Ventajas de tener web -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-5" data-aos="fade-right">
         <div class="container-fluid">
             <h2 class="text-center tittle-ventajas">¿Por Qué Necesitas un Sitio Web y Estar en Línea?</h2>
             <div class="scrolling-wrapper">
@@ -124,7 +126,7 @@
     <!-- fin Ventajas de tener web -->
 
     <!-- SERVICIOS -->
-    <section id="services" class="py-5">
+    <section id="services" class="py-5" data-aos="fade-left">
         <div class="container">
             <h2 class="text-center mb-4">Nuestros Servicios</h2>
             <div class="row">
@@ -139,7 +141,7 @@
                        <div class="card-body">
                         <h5 class="title-service"><i class="fas fa-rocket mb-2 p-2"></i>Plan Landing Page</h5>
                         <p class="card-text">Impulsa tu <span style="color: #003366;"><strong>marketing digital</strong></span> con una <span style="color: #003366;"><strong>landing page</strong></span> que convierte. Atrae más clientes y aumenta tus ventas con un diseño y estrategia enfocados en resultados.</p>
-                        <a href="#contact" class="btn btn-primary">Más información</a>
+                        <a href="servicios-detalle.html#landing-page" class="btn btn-primary">Más información</a>
                     </div>       
                     </div>
                 </div>
@@ -154,7 +156,7 @@
                        <div class="card-body">
                         <h5 class="title-service"><i class="fas fa-sitemap mb-2 p-2"></i>Plan Sitio Web Completo</h5>
                         <p class="card-text">Eleva tu marca con un <span style="color: #003366;"><strong>sitio web completo</strong></span>: personalizado, con varias páginas y lleno de funcionalidades. Perfecto para empresas que buscan <span style="color: #003366;"><strong>dominar su nicho en línea</strong></span>.</p>
-                        <a href="#contact" class="btn btn-primary">Más información</a>
+                        <a href="servicios-detalle.html#sitio-web-completo" class="btn btn-primary">Más información</a>
                     </div>               
                     </div>
                 </div>
@@ -169,7 +171,7 @@
                        <div class="card-body">
                         <h5 class="title-service"><i class="fas fa-tools mb-2 p-2"></i>Mantenimiento y Soporte</h5>
                         <p class="card-text">Asegura la seguridad y eficiencia de tu sitio con nuestros servicios de <span style="color: #003366;"><strong>mantenimiento web y soporte técnico</strong></span>. Soluciones rápidas y efectivas para mantener tu página siempre activa y actualizada.</p>
-                        <a href="#contact" class="btn btn-primary">Más información</a>
+                        <a href="servicios-detalle.html#mantenimiento-web" class="btn btn-primary">Más información</a>
                     </div>                    
                     </div>
                 </div>
@@ -180,7 +182,7 @@
     <!-- FIN SERVICIOS -->
 
     <!-- PORTFOLIO -->
-    <section id="portfolio" class="py-5">
+    <section id="portfolio" class="py-5" data-aos="fade-right">
         <div class="container-portfolio">
             <h2 class="text-center mb-4">Algunos de Nuestros Proyectos Completados</h2>
             <div class="row justify-content-center">
@@ -236,7 +238,7 @@
     <!-- FIN PORTFOLIO -->
 
     <!-- FORMULARIO CONTACTO -->
-    <div class="contact-background" id="contact">
+    <div class="contact-background" id="contact" data-aos="fade-up">
         <div class="contact-container">
             <div class="form-container">
                 <h2 class="text-center contact-h2">Contacto</h2>
@@ -307,6 +309,14 @@
     <a href="https://wa.me/34604263524" class="whatsapp-float" target="_blank">
         <img src="./assets/wpp.webp" alt="WhatsApp Chat">
     </a>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // Duración de la animación en milisegundos
+            once: true, // La animación solo ocurre una vez
+        });
+    </script>
 
 </body>
 
