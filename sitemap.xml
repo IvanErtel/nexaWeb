@@ -12,5 +12,16 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://nexaonline.netlify.app/blog</loc>
+        <lastmod>2024-10-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nexaonline.netlify.app/blog/diseño-web-burgos</loc>
+        <lastmod>2024-10-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
-
