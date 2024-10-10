@@ -1,39 +1,51 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    line-height: 1.6;
-}
-
-.landing-page-section {
-    padding: 50px 0;
-    background-color: #f8f9fa;
-}
-
-.landing-page-section h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #007bff;
-}
-
-.landing-page-section .subtitle {
-    font-size: 1.5rem;
-    color: #666;
-    margin-bottom: 40px;
-}
-
+/* Ajuste en los estilos de la lista para mayor espaciado */
 .benefits-list, .success-list {
     list-style: none;
     padding: 0;
+    margin-left: 20px;
 }
 
 .benefits-list li, .success-list li {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    display: flex;
+    font-size: 1rem;
+    margin-bottom: 20px;  /* Espaciado mayor entre los elementos */
+    /* display: flex; */
     align-items: center;
+    line-height: 1.5;  /* Mejora la legibilidad */
 }
 
 .benefits-list li i, .success-list li i {
     color: #007bff;
     margin-right: 10px;
+}
+
+.benefits-list li strong, .success-list li strong {
+    font-weight: 600;
+}
+
+.landing-page-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.landing-page-section p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px; /* Aumenta el margen inferior de las imágenes */
+}
+
+.container-portfolio {
+    padding: 50px 0;
+}
+
+.container-portfolio h2 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 40px;
 }

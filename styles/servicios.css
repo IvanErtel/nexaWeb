@@ -1,1 +1,45 @@
-#services{background:linear-gradient(to right,#f8f9fa,#e9ecef);padding-top:40px;padding-bottom:40px}#services .row{display:flex;flex-wrap:wrap;justify-content:center}#services .col-md-4{display:flex;margin-bottom:20px}.service-card{display:flex;flex-direction:column;flex:1;border:none;border-radius:8px;box-shadow:0 5px 15px rgba(0,0,0,.1);transition:transform .3s ease-in-out,box-shadow .3s ease-in-out;overflow:hidden}.card-img-top{width:100%;height:200px;object-fit:cover;transition:transform .3s ease-in-out}.card-body{display:flex;flex-direction:column;justify-content:space-between;flex:1}.service-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,.2)}.btn-primary:hover,.service-card:hover .card-img-top{transform:scale(1.05)}.service-card:hover .card-body{background-color:#f8f9fa}.btn-primary{font-weight:700;text-transform:uppercase;letter-spacing:1px;transition:background-color .3s ease-in-out,transform .3s ease-in-out}.btn-primary:hover{background-color:#0056b3}.title-service{font-weight:600;font-size:1.3rem;color:#333;text-shadow:0 2px 4px rgba(0,0,0,.2)}.card-text{font-size:1rem;font-weight:400;color:#666;text-shadow:0 1px 3px rgba(0,0,0,.3)}@media (max-width:768px){#services .col-md-4{flex:0 0 100%;max-width:100%}}
+/* Estilo minimalista con altura igual */
+.service-card-minimal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease-in-out;
+    min-height: 350px; /* Ajusta este valor según la altura que prefieras */
+}
+
+.service-card-minimal:hover {
+    background-color: #e9ecef;
+}
+
+.icon-container {
+    margin-bottom: 10px;
+}
+
+.title-service-minimal {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.card-text-minimal {
+    font-size: 1.1rem;
+    color: #666;
+    flex-grow: 1; /* Permite que el texto ocupe el espacio disponible */
+}
+
+.btn-minimal {
+    border-color: #003366;
+    color: #003366;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn-minimal:hover {
+    background-color: #003366;
+    color: white;
+}
