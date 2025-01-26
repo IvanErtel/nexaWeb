@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+/* Contenedor principal */
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+.privacidad-header {
+    background-color: #2a2a72;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Títulos */
+.privacidad-titulo {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+h1, h2 {
+    color: #2a2a72; /* Azul para destacar los títulos */
+    margin-top: 20px;
+    text-align: center; /* Centrado opcional */
+}
+
+/* Listas */
+ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    text-align: center;
+}
+
+/* Enlaces */
+a {
+    color: #009ffd;
+    text-decoration: underline;
+    text-align: center;
+}
+
+a:hover {
+    color: #0066cc;
+}
+
+/* Párrafos */
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Botón de regreso (opcional) */
+.back-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #009ffd;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #007acc;
+}
+
+/* Footer */
+.privacidad-footer {
+    text-align: center;
+    background-color: #2a2a72;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}

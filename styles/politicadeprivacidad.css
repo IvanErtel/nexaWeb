@@ -1,0 +1,78 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.privacidad-header {
+    background-color: #2a2a72;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.privacidad-titulo {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Contenido principal */
+.privacidad-contenido {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.privacidad-seccion {
+    margin-bottom: 20px;
+}
+
+.privacidad-subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #009ffd;
+}
+
+.privacidad-texto {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.privacidad-lista {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+.privacidad-lista li {
+    margin-bottom: 10px;
+}
+
+.privacidad-lista ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+/* Footer */
+.privacidad-footer {
+    text-align: center;
+    background-color: #2a2a72;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}

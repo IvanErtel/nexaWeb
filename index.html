@@ -109,6 +109,20 @@
         </nav>
     </header>
 
+    <div id="cookie-banner" style="display: none;">
+        <div class="cookie-content">
+            <p>
+                Este sitio web utiliza cookies para garantizar una mejor experiencia al usuario. 
+                Puedes aceptar todas las cookies o configurarlas según tus preferencias.
+                Consulta nuestra <a href="./politicadecookies.html" target="_blank">Política de Cookies</a> para más información.
+            </p>
+            <div class="cookie-buttons">
+                <button id="accept-all" onclick="acceptAllCookies()">Aceptar todas</button>
+                <button id="configure" onclick="showCookieSettings()">Configurar</button>
+            </div>
+        </div>
+    </div>
+
     <section id="home" class="hero" data-aos="fade-up">
         <div class="hero-inner">
             <div class="hero-content">
@@ -340,13 +354,18 @@
     <!-- FORMULARIO CONTACTO -->
 
     <footer class="footer">
-        <div class="container">
-            <p>© 2024 Alan Ivan Ertel Ramirez. All rights reserved.</p>
-            <a href="https://www.instagram.com/alanertel?utm_source=qr&igsh=MWFwdThhZTY1dG12dw==" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
+        <div class="footer-container">
+            <p>© 2025 - NexaWeb | Todos los derechos reservados</p>
+            <div class="footer-links">
+                <a href="./politicadecookies.html" class="footer-link">Política de Cookies</a>
+                <a href="./politicadeprivacidad.html" class="footer-link">Política de Privacidad</a>
+                <a href="https://www.instagram.com/alanertel?utm_source=qr&igsh=MWFwdThhZTY1dG12dw==" target="_blank" class="footer-link">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
         </div>
     </footer>
+    
 
     <!-- Scripts de Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
@@ -354,6 +373,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 
     <script src="./script/scripts.js" defer></script>
+    <script src="./script/cookies.js"></script>
 
 
     <a href="https://wa.me/34604263524" class="whatsapp-float" target="_blank">
@@ -367,6 +387,30 @@
             once: true, // La animación solo ocurre una vez
         });
     </script>
+
+<div id="cookieModal" class="modal">
+    <div class="modal-content">
+        <h2>Configura tus Preferencias de Cookies</h2>
+        <form id="cookieForm">
+            <label>
+                <input type="checkbox" name="necessary" checked disabled>
+                Cookies necesarias (requeridas para el funcionamiento del sitio web)
+            </label>
+            <label>
+                <input type="checkbox" name="analytics">
+                Cookies analíticas (ayudan a mejorar la experiencia del usuario)
+            </label>
+            <label>
+                <input type="checkbox" name="ads">
+                Cookies publicitarias (muestran anuncios relevantes)
+            </label>
+            <div class="modal-actions">
+                <button type="button" onclick="savePreferences()">Guardar</button>
+                <button type="button" onclick="closeModal()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 </body>
 
