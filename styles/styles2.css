@@ -234,31 +234,75 @@ body {
 /* FIN BOTTON WPP */
 
 /* Media Query para dispositivos móviles */
+/* Modificaciones para móvil */
 @media (max-width: 768px) {
-    .hero {
-        padding: 50px 20px;
-        background-attachment: scroll;
-        background: none; 
-        background-color: #007bff; 
-        background-attachment: scroll; 
-        background: linear-gradient(135deg, #009ffd 0%, #2a2a72 100%);
+    /* Eliminar scroll horizontal */
+    body {
+        overflow-x: hidden;
     }
-    
-    .hero::before {
-        background: rgba(0, 0, 0, 0.3); 
+
+    /* Ajustes hero section */
+    .hero-inner {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+        margin-bottom: 30px;
     }
 
     .hero h1 {
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-weight: 400;
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
-      }
-    
-      .hero-actions .btn {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    /* Ajustes carrusel de ventajas */
+    .scrolling-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        animation: none;
+        overflow-x: hidden;
+    }
+
+    .card-inline {
+        width: 100%;
+        max-width: 300px;
         margin: 10px 0;
-        padding: 10px 25px;
-        font-size: 1.1rem;
-        font-weight: 600;
+        animation: none;
+        font-size: 16px;
+    }
+
+    /* Eliminar animación de scroll */
+    @keyframes scroll {
+        0% { transform: none; }
+        100% { transform: none; }
+    }
+
+    /* Ajustar botones cookies */
+    .cookie-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cookie-buttons button {
+        width: 100%;
     }
 }
