@@ -256,6 +256,7 @@ body {
     .hero-image {
         order: 1;
         margin-bottom: 30px;
+        display: none;
     }
 
     .hero h1 {
